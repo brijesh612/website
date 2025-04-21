@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="admin_side.master.cs" Inherits="radhe_electronic.admin_side" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <style>
+        
+        .menu {
+    background:#141414;
+    width:100%;
+}
+
+.menu ul {
+        width:auto;
+        padding:10px;
+    }
+
+        .menu ul li {
+            list-style-type:none;
+            display:inline;
+            padding-right:5px;
+        }
+
+.menu ul li a {
+                background:#6699cc;
+                padding:7px 15px 7px 15px;
+                text-decoration:none;
+                color:red;
+                border-radius:20px;
+            }
+.menu ul li a:hover {
+                    background:yellow;
+                    padding:7px 15px 7px 15px;
+                    text-decoration:none;
+                    color:black;
+                    border-radius:20px;
+                }
+
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        body{
+             margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+          <div class="menu">
+          <center>
+            <ul style="margin-top: 1px;">
+                <li><a href="home1.aspx">Home</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li><a href="addcategory.aspx">Add_Category</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                 <li><a href="addproduct.aspx">Add_Product</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li><a href="order_details.aspx">Order_Details</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 <li><a href="contact_details.aspx">Contact_Details</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li><a href="feedback_details.aspx">Feedback_Details</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <!--<li><a href="admin_login.aspx">LogOut</a></li>!-->
+               <li><asp:Button ID="Button1" runat="server" Text="Logout" OnClick="Button1_Click" /></li>
+           </ul>
+          </center>
+        </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

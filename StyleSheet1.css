@@ -1,0 +1,54 @@
+﻿body {
+    margin: 0px;
+}
+
+.menu {
+    background: #141414; 
+    width: 100%;
+}
+
+    .menu ul {
+        width: auto;
+        padding: 10px;
+    }
+
+        .menu ul li {
+            list-style-type: none;
+            display: inline;
+            padding-right: 5px;
+        }
+
+            .menu ul li a {
+                background: #6699cc;
+                padding: 7px 15px 7px 15px;
+                text-decoration: none;
+                color: red;
+                border-radius: 20px;
+            }
+
+                .menu ul li a:hover {
+                    background: yellow;
+                    padding: 7px 15px 7px 15px;
+                    text-decoration: none;
+                    color: #ffffff;
+                    border-radius: 20px;
+                }
+
+.contact {
+    /*background-color: aquamarine; */
+   
+}
+
+.feedback {
+   /* width: 80%;
+    height: 100%;
+    margin-top: -17px;
+    background-image: url('image/images (4).jpg');
+    background-repeat: no-repeat;
+    background-size:cover;*/
+}
+
+.footer {
+    background-color: black;
+    color: white;
+}
